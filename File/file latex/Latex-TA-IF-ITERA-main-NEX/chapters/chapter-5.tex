@@ -1,0 +1,20 @@
+\newpage
+\chapter{Kesimpulan dan Saran} \label{Bab V}
+
+\section{Kesimpulan} \label{V.Kesimpulan}
+Berisi kesimpulan dari hasil dan pembahasan terkait penelitian yang dilakukan, dapat juga berupa temuan yang Anda dapatkan setelah melakukan penelitian atau analisis terhadap tugas akhir Anda. Berhubungan dengan poin pada Subbab \ref{I.Rumusan Masalah} dan \ref{I.Tujuan}. 
+
+\begin{enumerate}
+    \item Model klasifikasi ini dibangun menggunakan pendekatan ekstraksi fitur \textit{Gray Level Co-occurrence Matrix} (GLCM) yang kemudian diklasifikasikan menggunakan algoritma \textit{machine learning} \textit{Naive Bayes}. Untuk memperoleh performa model yang optimal, penelitian dilakukan dengan menguji dua metode algoritma optimasi, yaitu \textit{Genetic Algorithm} dan \textit{Particle Swarm Optimization}. Dataset yang digunakan terdiri dari 5 kelas penyakit daun bibit kelapa sawit. Melalui proses optimasi tersebut, model mampu mengklasifikasikan penyakit pada daun bibit kelapa sawit berdasarkan fitur yang diperoleh model. Pendekatan ini menunjukkan bahwa kombinasi antara ekstraksi fitur dan algoritma \textit{Naive Bayes} yang dioptimalkan dapat menjadi alternatif dalam mendeteksi penyakit pada daun kelapa sawit.
+    
+    \item Berdasarkan hasil pengujian, model \textit{Naive Bayes} yang dibangun dengan dua algoritma optimasi \textit{Genetic Algorithm} dan \textit{Particle Swarm Optimization} menghasilkan akurasi tertinggi sebesar 59\%. Selain itu, nilai \textit{precision}, \textit{recall}, dan \textit{F1-score} rata-rata berada pada kisaran 58\% hingga 59\% untuk seluruh kelas penyakit daun bibit kelapa sawit. Meskipun performa tersebut masih tergolong rendah, pendekatan ini tetap menunjukkan efisiensi komputasi yang tinggi dan dapat dijadikan sebagai \textit{baseline} awal untuk pengembangan metode klasifikasi yang lebih akurat di masa mendatang.
+\end{enumerate}
+
+\section{Saran} \label{V.Saran}
+Berdasarkan hasil penelitian yang telah dilakukan, berikut adalah beberapa saran yang dapat dipertimbangkan untuk pengembangan lebih lanjut:
+
+\begin{enumerate}
+    \item Perlu dilakukan penambahan jumlah dataset citra pada setiap kelas agar distribusi data menjadi lebih seimbang dan model yang dikembangkan memiliki kemampuan generalisasi yang lebih baik dalam melakukan klasifikasi citra. Penambahan variasi data juga dapat membantu model mengenali karakteristik citra yang lebih beragam.
+    \item Disarankan untuk mengeksplorasi dan membandingkan algoritma optimasi lain selain Particle Swarm Optimization (PSO) dan Genetic Algorithm (GA), seperti Differential Evolution, Ant Colony Optimization, atau algoritma berbasis deep learning. Selain itu, penggunaan arsitektur model yang berbeda, misalnya Convolutional Neural Network (CNN) dengan konfigurasi yang lebih kompleks, dapat dipertimbangkan untuk meningkatkan akurasi dan performa klasifikasi.
+    \item Implementasi model klasifikasi citra yang telah dikembangkan pada platform aplikasi Android sangat direkomendasikan agar hasil penelitian ini dapat dimanfaatkan secara lebih luas oleh masyarakat. Dengan adanya aplikasi mobile, pengguna dapat melakukan klasifikasi citra secara langsung dan praktis melalui perangkat smartphone, sehingga meningkatkan kemudahan dan aksesibilitas dalam penerapan teknologi ini di kehidupan sehari-hari.
+\end{enumerate}

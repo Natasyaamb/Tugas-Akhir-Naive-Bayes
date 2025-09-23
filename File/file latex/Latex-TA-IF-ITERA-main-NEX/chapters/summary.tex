@@ -1,0 +1,24 @@
+\clearpage
+\phantomsection% 
+\addcontentsline{toc}{chapter}{Ringkasan}
+\thispagestyle{fancy}
+
+\begin{center}
+	\large \bfseries \MakeUppercase{Ringkasan}\\
+	\begingroup
+	\setstretch{1.0} 
+	\normalsize \normalfont {\thetitle}\\
+	\endgroup
+	\normalsize \normalfont {\theauthor}\\
+	\bigskip
+	
+	\normalsize \normalfont \justifying
+	Kelapa sawit termasuk komoditas penting di Indonesia karena memberikan kontribusi ekonomi yang signifikan. Namun, dalam proses budidaya, tanaman ini rentan terhadap serangan penyakit yang dapat menghambat pertumbuhan dan menurunkan produktivitas, terutama pada fase pembibitan. Terdapat lima kategori utama penyakit yang sering menyerang daun bibit kelapa sawit, yaitu bercak daun, daun berkerut, daun mengulung, daun menguning, dan daun berputar. Saat ini, penanganan penyakit tersebut masih mengandalkan pendekatan manual melalui identifikasi gejala visual pada daun. Namun, metode ini memiliki beberapa keterbatasan, di antaranya membutuhkan waktu dan sumber daya manusia yang besar serta berpotensi menimbulkan kesalahan dalam diagnosis.  
+
+	Berdasarkan permasalahan tersebut, dilakukan penelitian untuk mengidentifikasi penyakit pada daun bibit kelapa sawit menggunakan pendekatan ekstraksi fitur \textit{Gray Level Co-occurrence Matrix} (GLCM) yang kemudian diklasifikasikan dengan algoritma \textit{Machine Learning Naïve Bayes}. Penelitian ini bertujuan untuk membangun model klasifikasi yang efisien secara komputasi dan mampu mengenali lima kelas penyakit tersebut. Dataset yang digunakan berasal dari PT Perkebunan Nusantara IV Regional 7 Bekri dan mencakup lima kelas penyakit daun bibit kelapa sawit. Untuk meningkatkan performa model, diterapkan dua metode optimasi, yaitu \textit{Genetic Algorithm} dan \textit{Particle Swarm Optimization}, guna mencari konfigurasi parameter terbaik.
+
+	Penelitian ini menggunakan total 340 citra dengan pembagian data latih sebesar 80\% dan data uji sebesar 20\%. Setelah fitur citra diekstraksi menggunakan GLCM, hasilnya digunakan sebagai input bagi algoritma \textit{Naïve Bayes}. Optimasi dilakukan untuk menemukan kombinasi parameter terbaik dengan memanfaatkan \textit{Genetic Algorithm} dan \textit{Particle Swarm Optimization}. Hasil pengujian menunjukkan bahwa model \textit{Naïve Bayes} yang dihasilkan memiliki akurasi validasi tertinggi sebesar 56\%. Selain itu, evaluasi menggunakan \textit{Confusion Matrix} menunjukkan bahwa nilai rata-rata \textit{precision, recall,} dan \textit{F1-score} berada pada kisaran 55\% hingga 56\% untuk seluruh kelas penyakit. Meskipun performa model ini masih tergolong rendah, pendekatan yang digunakan dapat menjadi dasar awal untuk pengembangan sistem klasifikasi penyakit daun kelapa sawit yang lebih canggih dan akurat di masa mendatang.
+	\vfill
+	
+\end{center}
+\clearpage

@@ -1,0 +1,74 @@
+\newpage
+\chapter{Pendahuluan} \label{Bab I}
+
+\section{Latar Belakang} \label{I.Latar Belakang}
+Tanaman kelapa sawit (\textit{Elaeis Guineensis Jacq}) merupakan salah satu pilar utama komoditas perkebunan Indonesia yang terkenal menghasilkan minyak nabati dalam jumlah besar secara efisien dan ekonomis, baik untuk pasar domestik maupun internasional \cite{gaffar2024minyak}. Dengan kondisi iklim tropis Indonesia membuat lingkungan ideal bagi pertumbuhan kelapa sawit, membuat negara menjadi salah satu produsen minyak kelapa sawit di dunia  dengan sebagian besar produksi ditujukan untuk ekspor dan sisanya memenuhi kebutuhan dalam negeri \cite{saragih2022pengaruh}\cite{imaduddin2023analisa}.
+
+Namun, dibalik potensinya yang besar, proses pembibitan dan budidaya kelapa sawit tetap menghadapi berbagai tantangan, khususnya pada fase awal pertumbuhan. Pada fase awal pertumbuhan bibit kelapa sawit, terutama dalam rentang usia 1 minggu hingga 3 bulan sangat rentan terhadap serangan penyakit daun \cite{syafrianda2024analisis}. Beberapa gejala umum yang sering muncul adalah daun menguning akibat infeksi jamur \textit {Ganoderma Boninense}, bercak-bercak akibat jamur \textit {Curvularia}, daun yang menggulung, berputar dan berkerut akibat serangan hama atau faktor genetik \cite{lisnawita2024peningkatan}\cite{harahap2024optimalisasi}\cite{napitupulu2022ta}\cite{marcelian2023identifikasi}. 
+
+Penyakit-penyakit ini dapat memperlambat pertumbuhan, menghambat fotosintesis bahkan berdampak negatif terhadap kualitas bibit yang akan ditanam di lahan produksi \cite{marcelian2023identifikasi}. Oleh karena itu, deteksi dini terhadap penyakit pada bibit kelapa sawit sangat penting untuk memastikan pertumbuhan optimal dan kualitas bibit yang baik. Namun, proses identifikasi penyakit ini sering kali memerlukan keahlian khusus dan waktu yang cukup lama, sehingga diperlukan pendekatan yang lebih efisien dan akurat untuk mendeteksi penyakit pada bibit daun kelapa sawit \cite{pakiding2025implementasi}.
+
+Salah satu lokasi yang mengalami tantangan tersebut adalah PT Perkebunan Nusantara (PTPN) IV Regional 7 Kebun Bekri di Provinsi Lampung menunjukkan bahwa serangan penyakit pada daun bibit kelapa sawit menjadi salah satu kendala signifikan yang mempengaruhi kualitas dan kuantitas bibit siap tanam. Keterlambatan penanganan penyakit dapat mengurangi persentase bibit layak tanam yang pada akhirnya mempengaruhi produktivitas lahan secara keseluruhan.
+
+Untuk menjawab tantangan ini, penelitian bertujuan untuk mengidentifikasi penyakit pada bibit kelapa sawit menggunakan teknologi pengolahan citra dan pembelajaran mesin. Pengolahan citra digunakan untuk mengekstraksi fitur penting seperti warna (RGB), tekstur (\textit {Gray Level Co-Occurrence Matrix} atau GLCM) dan bentuk \cite{yunianto2021klasifikasi}.
+
+Proses klasifikasi mengelompokkan objek berdasarkan fitur-fitur atau nilai atribut unik dari setiap objeknya. Pada proses ini, klasifikasi jenis penyakit pada daun kelapa sawit menerapkan pengolahan citra digital yang mengolah dan menganalisis sebuah citra dengan inputan data citra untuk menghasilkan informasi berupa citra. Penerapan pengolahan citra digital digunakan sebagai pembeda antara struktur bentuk, tekstur dan warna pada daun kelapa sawit yang sehat dan yang terserang penyakit, sekaligus menjadi dasar untuk parameter dalam penelitian \cite{elvira2021klasifikasi}. Daun kelapa sawit akan diteliti lebih lanjut dengan fitur tekstur \textit {Gray Level Co-Occurrence Matrix} (GLCM) untuk menemukan perbedaan pada struktur daun, kemudian hasilnya akan diekstraksi dengan metode RGB untuk mengidentifikasi terkait kondisi daun melalui perbedaan warnanya \cite{sukmanapeningkatan}.
+
+Metode klasifikasi \textit{Naïve Bayes} telah menunjukkan potensi signifikan dalam berbagai penelitian terkait identifikasi berbasis citra \cite{afriansyah2024algoritma}. Misalnya, pada penelitian Septian sebelumnya menunjukkan bahwa metode klasifikasi seperti \textit{Naïve Bayes} mampu bekerja cukup baik dalam mengenali pola berdasarkan fitur visual dengan teknik \textit{10-Fold Cross Validation} yang berhasil mencapai akurasi hingga 86,06\% dalam membedakan jamur beracun dan tidak beracun \cite{prayoga2019implementasi}.
+
+Lain halnya dengan penelitian oleh penelitian Ardi dkk yang menerapkan \textit{Naïve Bayes} untuk mendeteksi penyakit pada daun tanaman tomat berdasarkan fitur warna dan bentuk dengan GLCM dan \textit{Naïve Bayes} menunjukkan tingkat akurasi sebesar 80\% dari 15 dataset yang digunakan \cite{nainggolan2022identifikasi}. Sementara itu, pada penelitian Felicia membandingkan efektivitas \textit{Naïve Bayes} dengan KNN untuk mengidentifikasi jenis buah apel menggunakan fitur tekstur \textit{Local Binary Pattern (LBP)} dan warna HSV. Penelitian tersebut menunjukkan bahwa \textit{Naïve Bayes} memberikan akurasi lebih tinggi, berkisar 97\% dibandingkan metode \textit {K-Nearest Neighbor} (KKN) berkisar 82\% \cite{febriana2021perbandingan}.
+
+Berdasarkan studi-studi tersebut \cite{prayoga2019implementasi}\cite{nainggolan2022identifikasi}\cite{febriana2021perbandingan}, metode \textit{Naïve Bayes} terbukti efektif untuk tugas klasifikasi yang melibatkan fitur warna dan tekstur dan mampu meminimalkan nilai \textit{error} pada dataset yang cukup besar. Namun, akurasi metode ini masih dapat ditingkatkan dengan pendekatan optimasi. Oleh karena itu, dalam penelitian ini, digunakan integrasi metode \textit{Naïve Bayes} dengan teknik optimasi seperti \textit{Genetic Algorithm (GA)} dan \textit{Particle Swarm Optimization (PSO)} untuk meningkatkan performa klasifikasi.
+
+\textit{Genetic Algorithm} (GA) terinspirasi oleh proses evolusi biologis \cite{dwiputra2024perancangan}\cite{patmawatioptimalisasi}, sedangkan Teknik \textit{Particle Swarm Optimization} (PSO) terinspirasi oleh perilaku sosial burung dan ikan. Keduanya merupakan metode optimasi yang telah terbukti efektif dalam meningkatkan akurasi klasifikasi, sehingga diharapkan dapat meningkatkan akurasi deteksi penyakit pada bibit kelapa sawit.
+
+Optimasi ini akan membantu dalam menyempurnakan parameter, seperti \textit{Prior Probability} dan \textit{Likelihood Estimation}, sehingga model dapat beradaptasi lebih baik terhadap variasi data \cite{ozsoy2020use}. Dalam evaluasi kinerja model digunakan juga metode \textit{Confusion Matrix} yang memungkinkan analisis lebih rinci terhadap \textit{presisi, recall}, dan akurasi hasil klasifikasi \cite{manurung2024implementasi}.
+
+\section{Rumusan masalah} \label{I.Rumusan Masalah}
+\indent Berdasarkan latar belakang yang telah dijelaskan diatas, maka rumusan masalah yang terkait, antara lain:
+\begin{enumerate}[noitemsep]
+	\item Bagaimana proses implementasi dan pengembangan model \textit{Naïve Bayes} dengan \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA) dalam mengidentifikasi penyakit pada daun bibit kelapa sawit?
+	\item Apakah model \textit{Naïve Bayes} dengan \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm (GA)} terbukti efektif dalam mengidentifikasi penyakit pada daun bibit kelapa sawit?
+	\item Faktor-faktor apa saja yang mempengaruhi kinerja model \textit{Naïve Bayes} dengan \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm (GA)} dalam mengidentifikasi penyakit pada daun bibit kelapa sawit?
+\end{enumerate}
+
+\section{Tujuan} \label{I.Tujuan}
+\indent Berdasarkan rumusan masalah di atas, maka tujuan penelitian ini, antara lain:
+\begin{enumerate}[noitemsep]
+	\item Mengembangkan dan mengimplementasikan model klasifikasi penyakit pada daun bibit kelapa sawit menggunakan algoritma \textit{Naïve Bayes} dengan \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA).
+	\item Mengevaluasi efektivitas model \textit{Naïve Bayes} dalam mengidentifikasi penyakit pada daun bibit kelapa sawit.
+	\item Menganalisis pengaruh fitur-fitur penting yang memengaruhi kinerja model \textit{Naïve Bayes} dengan \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm (GA)} dalam mengidentifikasi penyakit pada daun bibit kelapa sawit.
+\end{enumerate}
+
+\section{Batasan Masalah} \label{I.Batasan}
+\indent Berdasarkan rumusan masalah diatas, diperlukan beberapa batasan masalah agar menghindari perluasan masalah, antara lain:
+\begin{enumerate}[noitemsep]
+	\item Penelitian ini hanya berfokus pada identifikasi penyakit pada daun bibit kelapa sawit menggunakan metode \textit{Naïve Bayes} dengan optimasi \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA).
+	\item Penelitian ini hanya menggunakan dataset citra daun bibit kelapa sawit yang diambil dari PT Perkebunan Nusantara IV Regional 7 Kebun Bekri.
+	\item Penelitian ini hanya difokuskan pada identifikasi penyakit yang menyerang daun bibit kelapa sawit dalam rentang usia 1 minggu hingga 3 bulan.
+	\item Data yang digunakan berupa citra digital daun kelapa sawit, dengan fitur utama yang dianalisis adalah warna (RGB) dan tekstur (\textit{Gray Level Co-Occurrence Matrix (GLCM)}).
+	\item Model klasifikasi yang digunakan adalah \textit{Naïve Bayes} dengan menggunakan \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA), tanpa membandingkan dengan algoritma klasifikasi lainnya.
+\end{enumerate}
+
+\section{Manfaat Penelitian} \label{I.Manfaat}
+\indent Penelitian ini diharapkan dapat memberikan manfaat, antara lain:
+\begin{enumerate}[noitemsep]
+	\item Memudahkan petani perkebunan kelapa sawit dan pihak terkait dalam mengidentifikasi penyakit pada daun bibit kelapa sawit secara cepat dan akurat. 
+	\item Memberikan wawasan dan kontribusi dalam pengembangan teknologi identifikasi penyakit pada daun bibit kelapa sawit menggunakan metode \textit{Naïve Bayes} dengan optimasi \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA).
+	\item Menyajikan evaluasi tentang kinerja metode \textit{Naïve Bayes} dengan optimasi \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA) dalam klasifikasi penyakit pada daun bibit kelapa sawit.
+	\item Menjadi salah satu pembuktian akurasi model \textit{Naïve Bayes} dengan optimasi \textit{Particle Swarm Optimization} (PSO) dan \textit{Genetic Algorithm} (GA) pada penyakit daun bibit kelapa sawit.
+	\item Menjadi referensi bagi penelitian selanjutnya yang berkaitan dengan identifikasi penyakit pada tanaman menggunakan teknologi pengolahan citra dan pembelajaran mesin.
+\end{enumerate}
+
+\section{Sistematika Penulisan} \label{I.Sistematika}
+Pada penulisan Tugas Akhir ini, penulis menyusun sistematika penulisan sebagai berikut:
+\subsection{Bab I}
+\indent Bab I Pendahuluan membahas mengenai latar belakang permasalahan, rumusan masalah, tujuan penelitian, batasan-batasan masalah penelitian, manfaat penelitian, dan sistematika penulisan.
+\subsection{Bab II}
+\indent Bab II Tinjauan Pustaka membahas mengenai kajian tinjauan pustaka yang menjelaskan tentang pengertian, teori, dan penelitian terdahulu yang berkaitan dengan penelitian ini.
+\subsection{Bab III}
+\indent Bab III Analisis dan Perancangan membahas mengenai metodologi penelitian yang menjelaskan tentang langkah-langkah yang dilakukan dalam penelitian ini, mulai dari alur penelitian, pengumpulan data, pengolahan data, hingga analisis hasil.
+\subsection{Bab IV}
+\indent Bab IV Hasil dan Pembahasan membahas menganai hasil dan pembahasan yang menjelaskan tentang hasil penelitian yang diperoleh dengan alur yang tertera. 
+\subsection{Bab V}
+\indent Bab V Kesimpulan dan Saran berisi tentang kesimpulan dan saran yang menjelaskan tentang kesimpulan dari penelitian yang dilakukan dan saran-saran untuk penelitian selanjutnya.
