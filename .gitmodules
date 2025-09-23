@@ -1,0 +1,3 @@
+[submodule "Code/Streamlit/palm_leaf_diseases_streamlit"]
+	path = Code/Streamlit/palm_leaf_diseases_streamlit
+	url = https://github.com/Mboedhi/palm_leaf_diseases_streamlit.git
